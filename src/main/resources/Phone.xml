@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<entity-mappings xmlns="https://jakarta.ee/xml/ns/persistence/orm"
+                 version="3.0">
+
+    <entity class="model.Phone">
+        <table name="phone" schema="lab03"/>
+        <attributes>
+            <id name="id">
+                <column name="id"/>
+            </id>
+            <basic name="name">
+                <column name="name"/>
+            </basic>
+            <basic name="price">
+                <column name="price" precision="11"/>
+            </basic>
+            <basic name="color">
+                <column name="color"/>
+            </basic>
+            <basic name="country">
+                <column name="country"/>
+            </basic>
+            <basic name="quantity">
+                <column name="quantity" precision="11"/>
+            </basic>
+        </attributes>
+    </entity>
+</entity-mappings>
